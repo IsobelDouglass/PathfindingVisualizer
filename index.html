@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pathfinding Visualizer - Project One</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="format.css">
+    </head>
+    <body>
+        <header>
+            <h2 id="page-title">Pathfinding Visualizer</h2>
+
+            <div class="divider"></div>
+
+            <nav class="button-row" aria-label="Primary actions">
+                <div class="button-container" id="primary-group">
+                    <button id="generate-endpoints">Generate New Endpoints</button>
+                    <button id="add-weights-add-walls" class="mode-wall">Draw with Weights</button>
+                    <button id="generate-maze">Generate Walled Maze</button>
+                    <button id="generate-weighted-maze">Generate Weighted Maze</button>
+                </div>
+            </nav>
+
+            <div class="divider"></div>
+
+            <nav class="button-row" aria-label="Secondary actions">
+                <div class="button-container" id="secondary-group">
+                    <button id="run-bfs">Run BFS</button>
+                    <button id="run-dijkstra">Run Dijkstra</button>
+                    <button id="run-astar">Run A*</button>
+                </div>
+            </nav>  
+
+            <div class="divider"></div>
+
+            <nav class="button-row" aria-label="Primary actions">
+                <div class="button-container" id="primary-group">
+                    <button id="reset-btn">Reset Grid</button>
+                </div>
+            </nav>
+
+            <div class="speed-bar-wrap">
+                <input type="range" id="speed-control" class="speed-bar" min="1" max="10" value="5" aria-label="Animation speed">
+            </div>
+
+            <h3 id="description"></h3>
+        </header>
+        <main>
+            <div id="grid-container"></div>
+        </main>
+        <footer> 
+            <p id="note">       ctrl + click to pan</p>
+        </footer>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
