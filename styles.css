@@ -183,6 +183,11 @@ body {
   opacity: 0.85;
 }
 
+.button-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 footer {
   position: fixed;
   bottom: 0;
