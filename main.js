@@ -39,7 +39,7 @@ elements.resetBtn.addEventListener('click', () => {
 
 function updateSpeedBarFill() {
   const percent = (elements.speedControl.value - elements.speedControl.min) / (elements.speedControl.max - elements.speedControl.min) * 100;
-  elements.speedControl.style.background = `linear-gradient(to right, lightblue ${percent}%, #fff ${percent}%)`;
+  elements.speedControl.style.setProperty('--percent', `${percent}%`);
 }
 
 elements.speedControl.addEventListener('input', updateSpeedBarFill);
